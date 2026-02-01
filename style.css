@@ -1,5 +1,6 @@
+/* General body style */
 body {
-    background-color: #ffe6f0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@ body {
     margin: 0;
 }
 
+/* Container styling */
 .container {
     text-align: center;
     background: white;
@@ -16,14 +18,16 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+/* Heading styling */
 h1 {
     color: #ff4d88;
 }
 
-.buttons {
-    margin-top: 20px;
+.name {
+    color: #ff3366; /* Pink name */
 }
 
+/* Button styling */
 button {
     padding: 12px 24px;
     font-size: 18px;
@@ -37,10 +41,27 @@ button {
     background-color: #ff4d88;
     color: white;
 }
+
+#noBtn {
+    background-color: #cccccc;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+/* Image styling */
 .valentine-img {
     width: 200px;
-    margin-top: 15px;
+    margin: 15px;
     animation: float 3s ease-in-out infinite;
+}
+
+.valentine-img-small {
+    width: 100px;
+    margin: 10px;
+    animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -49,25 +70,9 @@ button {
     100% { transform: translateY(0); }
 }
 
-
-#noBtn {
-    background-color: #cccccc;
-}
+/* Floating hearts animation */
 @keyframes floatUp {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
 }
 
-button:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
-}
-.name {
-    color: #ff3366;
-}

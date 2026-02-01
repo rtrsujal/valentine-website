@@ -1,77 +1,64 @@
-/* General body style */
 body {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* Container styling */
 .container {
-    text-align: center;
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 400px;
 }
 
-/* Heading styling */
 h1 {
-    color: #ff4d88;
+  color: #ff4d6d;
+  margin-bottom: 10px;
 }
 
-.name {
-    color: #ff3366; /* Pink name */
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
 }
 
-/* Button styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 button {
-    padding: 12px 24px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 #yesBtn {
-    background-color: #ff4d88;
-    color: white;
+  background: #ff4d6d;
+  color: white;
 }
 
 #noBtn {
-    background-color: #cccccc;
+  background: #ddd;
 }
 
 button:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
+  transform: scale(1.1);
 }
 
-/* Image styling */
-.valentine-img {
-    width: 200px;
-    margin: 15px;
-    animation: float 3s ease-in-out infinite;
-}
-
-.valentine-img-small {
-    width: 100px;
-    margin: 10px;
-    animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-/* Floating hearts animation */
-@keyframes floatUp {
-    from { transform: translateY(0); opacity: 1; }
-    to { transform: translateY(-100vh); opacity: 0; }
+#message {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ff4d6d;
+  font-weight: bold;
 }
